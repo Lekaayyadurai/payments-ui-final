@@ -1,10 +1,12 @@
 import './App.css';
 import PaymentsAdd from './remoteComponents/PaymentsAdd';
-import PaymentsList from './remoteComponents/PaymentsList';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageHeader from './components/pageHeader/PageHeader';
 import HomePage from './remoteComponents/HomePage';
 import PageNotFound from './remoteComponents/PageNotFound';
+import { lazy } from 'react';
+
+const PaymentsList = lazy( () => import('./remoteComponents/PaymentsList') );
 
 function App() {
   return (

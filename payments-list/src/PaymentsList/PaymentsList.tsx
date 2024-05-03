@@ -1,5 +1,11 @@
+import Search from "./Search/Search";
+import Transactions from "./Transactions/Transactions";
+
 const PaymentsList = () : JSX.Element => {
-    return <h2>This is the payments list</h2>
+    return <>
+    <Search />
+    <Transactions />
+    </>
 }
 
 export default PaymentsList;
